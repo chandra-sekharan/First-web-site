@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#container{
+    width: 100%;
+    height: 680px;
+    background:linear-gradient(to bottom,rgb(7, 199, 233),rgb(61, 212, 15));
+    display: none;
+}
+.html{
+    width: 20%;
+    height: 250px;
+    background-color: whitesmoke;
+    position:relative;
+    top: 18%;
+    left: 3%;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px 4px;
+}
+.css{
+    width: 20%;
+    height: 250px;
+    background-color: whitesmoke;
+    position: relative;
+    top: 18%;
+    left: -8%;
+    margin-top: 20px;
+    margin-left: 150px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px 4px;
+}
+.sql{
+    width: 20%;
+    height: 250px;
+    background-color: whitesmoke;
+    position:relative;
+    top: -58.5%;
+    left: 26%;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px 4px;
+}
+.javascript{
+    width: 20%;
+    height: 250px;
+    background-color: whitesmoke;
+    position: relative;
+    top: -55.5%;
+    left: 15%;
+    margin-left: 150px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px 4px;
+}
+.react{
+    width: 20%;
+    height: 250px;
+    background-color: whitesmoke;
+    position:relative;
+    top: -132%;
+    left: 50%;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px 4px;
+}
+.pentesting{
+    width: 20%;
+    height: 250px;
+    background-color: whitesmoke;
+    position: relative;
+    top: -128.5%;
+    left: 39%;
+    margin-left: 150px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px 4px;
+}
+.kalilinux{
+    width: 20%;
+    height: 250px;
+    background-color: whitesmoke;
+    position:relative;
+    top: -205.8%;
+    left: 75%;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px 4px;
+}
+.c-lang{
+    width: 20%;
+    height: 250px;
+    background-color: whitesmoke;
+    position: relative;
+    top: -202%;
+    left: 64%;
+    margin-left: 150px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px 4px;
+}
+h1{
+    margin-left: 90px;
+    line-height: 80px;
+    font-style: italic;
+    font-family: sans-serifs;
+}
+.html1{
+    margin-left: 80px;
+    margin-top: 20px;
+}
+.css1{
+    margin-left: 79px;
+    margin-top: 15px;
+}
+h2{
+    margin-left: 48px;
+    line-height: 80px;
+    font-style: italic;
+    font-family: sans-serifs;
+}
+label{
+    color: whitesmoke;
+}
+span{
+    margin-left: 605px;
+    position: absolute;
+    top: 8%;
+    font-size: 40px;
+}
+#loader{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    color: green;
+    border-radius: 150px;
+    border: 15px solid skyblue;
+    border-top: 15px solid green;
+    animation: spin 1s linear infinite;
+} 
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width:670px){
+    #container{
+        height: 2000px;
+    }
+    .html{
+        position: relative;
+        width: 160px;
+        top: 180px;
+        height: 160px;
+        left: 80px;
+    }
+    .css{
+        
+        position: relative;
+        width: 160px;
+        height: 160px;
+        top: 220px;
+        left: -67px;
+    }
+    .sql{
+        position: relative;
+        width: 160px;
+        height: 160px;
+        top: 270px;
+        left:82px;
+    }
+    .javascript{
+        position: relative;
+        width: 160px;
+        height: 160px;
+        top: 320px;
+        left: -67px;
+    }
+    .react{
+        position: relative;
+        width: 160px;
+        height: 160px;
+        top: 370px;
+        left: 84px;
+    }
+    .pentesting{
+        position: relative;
+        width: 160px;
+        height: 160px;
+        top: 420px;
+        left: -67px;
+    }
+    .kalilinux{
+        position: relative;
+        width: 160px;
+        height: 160px;
+        top: 470px;
+        left: 80px;
+    }
+    .c-lang{
+        position: relative;
+        width: 160px;
+        height: 160px;
+        top: 520px;
+        left: -67px;
+    }
+    span{
+        margin-left: 100px;
+    }
+    h1{
+        margin-left: 38px;
+        line-height: 42px;
+    }
+    h2{
+        margin-left: 15px;
+        line-height: 20px;
+        font-size: 18px;
+    }
+    .html1{
+        margin-left: 20px;
+    }
+    .css1{
+        margin-left: 20px;
+        margin-top: 7px;
+    }
+}

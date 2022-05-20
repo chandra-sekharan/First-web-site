@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>sign in</title>
+</head>
+<body>
+    <div class="container">
+         <div class="form-mt">
+             <div class="logo-log">
+                <img src="user-solid.svg" id="logo"> 
+            </div>
+             <form>
+                <input type="text" name="user" class="user" placeholder="username">
+                <input type="password" name="pass" class="pass" placeholder="password">
+                <a href="#" class="forgot" onclick="alert('cheppanu brother')">forgot password?</a>
+                <input type="submit" id="signin" value="Sign in">
+             </form>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        $('#signin').click(function (e) { 
+            e.preventDefault();
+            var user =$('input[name=user]').val();
+            var pass =$('input[name=pass]').val();
+        $.ajax({
+            type: "POST",
+            url: "signin.php",
+            data: {
+                "user":user,
+                "pass":pass,
+            },
+            dataType: "html",
+            success: function (response) {
+                alert(response);
+            }
+        });    
+            
+        });
+    });
+</script>
+</html>

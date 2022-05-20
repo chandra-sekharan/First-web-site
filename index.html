@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---chandra-sekharan-----</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="loader"></div> 
+    <div id="container1">
+    <div id="container">
+        
+        <img src="planets.png" class="planets" alt="planets">
+        <img src="bars-solid.png" alt="menu-bar" width="40px" style="position:absolute;" id="menu-bar">
+        <div id="menu-display">
+            <button id="close">&times;</button>
+        <ul>
+            <li><a href="index.html">Home </a></li>
+            <li><a href="skill.html">Skills</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="about.html">About us</a></li>
+        </ul>
+        </div>
+            <input type="text" name="search" class="search" placeholder="search">
+            <button type="submit" id="button"></button>
+            <button id="login-button"><a href="login.php">signin</a></button>
+            <button id="register-button"><a href="register.php">signup</a></button>
+            <h1>Hello! <span class="type"></span></h1>
+            <div class="Sphere"></div>
+                    
+    </div>
+
+
+
+</div>
+</body>
+    <script>
+        var typed = new Typed(".type", {
+            strings: ["welcome","I'm cs","web developer"],
+            typeSpeed:100,
+            backSpeed:100,
+            loop:true
+        });
+        var Texts = [
+            'CHANDRA','SHEKAR','COMPUTER','SCIENCE','AI','CYBER', 'PENTESTER',
+            'HTML','CSS','JAVASCRIPT','PHP','SQL','CLOUD','3D','ADITYA','HOME',
+            'COLLEGE','DC',
+        ];
+
+        var tagCloud = TagCloud('.Sphere', Texts, {
+            
+            radius: 222,
+            maxSpeed: 'fast',
+            initSpeed: 'fast',
+            direction: 135,
+            keep: true
+
+        });
+        $(document).ready(function () {
+            $('#button').click(function (e) { 
+                e.preventDefault();
+             var data =$('input[name=search]').val();
+             $.ajax({
+                 type: "POST",
+                 url: "search.php",
+                 data: {
+                     "data":data,
+                 },
+                 dataType: "html",
+                 success: function (response) {
+                     alert(response);
+                 }
+             });
+                
+            });
+        });
+        $(window).on("load",function(){
+            $("#loader").fadeOut("slow");
+            $("#container").fadeIn("normal");
+            $("#container1").fadeIn("normal");
+            
+        });
+        document.getElementById('menu-bar').addEventListener("click",function(){
+            document.getElementById('menu-display').style.display="block";
+        })
+        document.getElementById('close').addEventListener("click",function(){
+            document.getElementById('menu-display').style.display="none";
+        })
+         </script>
+</html>
+
