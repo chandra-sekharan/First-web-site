@@ -12,7 +12,6 @@
 .html{
     width: 20%;
     height: 250px;
-    background-color: whitesmoke;
     position:relative;
     top: 18%;
     left: 3%;
@@ -22,7 +21,6 @@
 .css{
     width: 20%;
     height: 250px;
-    background-color: whitesmoke;
     position: relative;
     top: 18%;
     left: -8%;
@@ -34,7 +32,6 @@
 .sql{
     width: 20%;
     height: 250px;
-    background-color: whitesmoke;
     position:relative;
     top: -58.5%;
     left: 26%;
@@ -44,7 +41,6 @@
 .javascript{
     width: 20%;
     height: 250px;
-    background-color: whitesmoke;
     position: relative;
     top: -55.5%;
     left: 15%;
@@ -55,7 +51,6 @@
 .react{
     width: 20%;
     height: 250px;
-    background-color: whitesmoke;
     position:relative;
     top: -132%;
     left: 50%;
@@ -65,7 +60,6 @@
 .pentesting{
     width: 20%;
     height: 250px;
-    background-color: whitesmoke;
     position: relative;
     top: -128.5%;
     left: 39%;
@@ -76,7 +70,6 @@
 .kalilinux{
     width: 20%;
     height: 250px;
-    background-color: whitesmoke;
     position:relative;
     top: -205.8%;
     left: 75%;
@@ -86,7 +79,6 @@
 .c-lang{
     width: 20%;
     height: 250px;
-    background-color: whitesmoke;
     position: relative;
     top: -202%;
     left: 64%;
